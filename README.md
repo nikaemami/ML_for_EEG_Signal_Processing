@@ -3,7 +3,7 @@
 
 General form of an **EEG** signal:
 
-<img src="images/1.png" width="500" height="300">
+<img src="4.png" width="500" height="300">
 
 The experiment was done with **28 electrodes** put on different regions of a person's brain, and it was repeated for multiple trials. The first step to take with signals like this, is to remove the noise and filter the signal. Then, the features corresponding to each of the trials must be extracted, and then the signal processing starts. 
 
