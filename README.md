@@ -17,7 +17,7 @@ First, we load the 2 datasets for human and piano pictures, named S2TB1, and S2T
 
 <h2> &nbsp;Feature Extraction</h2>
 
-here are some general explanations regarding feature extraction from the data:
+Here are some general explanations regarding **feature extraction** from the data:
 
 A feature represents a distinguishing property, a recognizable measurement, and a functional component obtained from a section of a pattern.
 
@@ -105,7 +105,7 @@ So the maximum value of the band is mean+SE and the minimum value of the band is
 
 We also mapped the number of our dataframes in time. For each dataframe, we flattend the mean of the window with the length of 70 samples. So for each dataframe, we converted the number of its middle samples to milliseconds:
 
-the samples of the k_th dataframe vary from 50k to 50k+70, so the middle sample index is (50k+50k+70)/2=50k+35.
+The samples of the k_th dataframe vary from 50k to 50k+70, so the middle sample index is (50k+50k+70)/2=50k+35.
 
 ```ruby
 accuracy_mean_list_percent=np.array(accuracy_mean_list)*100
