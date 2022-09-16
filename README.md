@@ -19,13 +19,7 @@ First, we load the 2 datasets for human and piano pictures, named S2TB1, and S2T
 
 Here are some general explanations regarding **feature extraction** from the data:
 
-A feature represents a distinguishing property, a recognizable measurement, and a functional component obtained from a section of a pattern.
-
-Extracted features are meant to **minimize the loss** of important information embedded in the signal. In addition, they also simplify the amount of resources needed to describe a huge set of data accurately. This is necessary to **minimize the complexity** of implementation to reduce the cost of information processing, and to cancel the potential need to compress the information.
-
 A variety of methods have been widely used to extract the features from EEG signals. Among these methods are **Time Frequency Distributions (TFD)**, **Fast Fourier Transform (FFT)**, **Eigenvector Methods (EM)**, **Wavelet Transform (WT)**, and **Auto Regressive Method (ARM)**.
-
-Acclaim about the definite priority of methods according to their capability is very hard. The findings indicate that each method has specific advantages and disadvantages, which make it appropriate for special type of signals.
 
 Frequency domain methods may not provide high-quality performance for some EEG signals. In contrast, time-frequency methods, for instance, may not provide detailed information on EEG analysis as much as frequency domain methods. It is crucial to make clear the of the signal to be analyzed in the application of the method whenever the performance of analyzing method is discussed.
 
@@ -52,19 +46,6 @@ We shuffle our dataframe, split it into **test** and **train** datasets , and us
 <h2> &nbsp;Classification Model:</h2>
 
 For classification, we have 3 classification models. **KNN**, **SVM**, and **Neural Networks(MLP)**.
-
-<h4> &nbsp;K-Nearest Neighbors(KNN):</h4>
-
-The K-nearest neighbor (KNN) algorithm is one of the simplest and earliest classification algorithms. The KNN algorithm does not require to consider probability values. The ‘K’ is the KNN algorithm is the number of nearest neighbors considered to take ‘vote’ from. The selection of different values for ‘K’ can generate different classification results for the same sample object.
-
-<h4> &nbsp;Support vector machine(SVM):</h4>
-
-Support vector machine (SVM) algorithm can classify both linear and non-linear data. It first maps each data item into an n-dimensional feature space where n is the number of features. It then identifies the hyperplane that separates the data items into two classes while maximizing the marginal distance for both classes and minimizing the classification errors.
-
-<h4> &nbsp;MLP (Neural Networks):</h4>
-
-Neural Networks are a set of machine learning algorithms which are inspired by the functioning of the neural networks of human brain. Likewise, NN algorithms can be represented as an interconnected group of nodes. The output of one node goes as input to another node for subsequent processing according to the interconnection. Nodes are normally grouped into a matrix called layer depending on the transformation they perform. Nodes and edges have weights that enable to adjust signal strengths of communication which can be amplified or weakened through repeated training. Based on the training and subsequent adaption of the matrices, node and edge weights, NNs can make a prediction for the test data.
-
 
 <h2> &nbsp;Cross Validation:</h2>
 
